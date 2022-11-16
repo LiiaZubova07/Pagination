@@ -13,6 +13,7 @@ async function main() {
   //информация, сколько стр отображать, какая страница
   function displayList(arrData, rowPerPage, page) {
     const postsEl = document.querySelector('.posts');
+	 postsEl.innerHTML = '';
 	 //после того, как page1 будет приходить, будем уменьшать на 1
 	 page--;
 
