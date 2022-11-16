@@ -61,10 +61,18 @@ async function main() {
     liEl.classList.add('pagination__item');
     //в li положила номер страницы
     liEl.innerText = page;
+	 if(currentPage == page){
+		liEl.classList.add('pagination__item-active');
+	 }
 
     liEl.addEventListener('click', () => {
       currentPage = page;
       displayList(postsData, rows, currentPage);
+
+		let currentItemLi = document.querySelector('li.pagination__item-active');
+		currentItemLi.classList.remove('pagination__item-active');
+
+		liEl.classList.add('pagination__item-active');
     });
     return liEl;
   }

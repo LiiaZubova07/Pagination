@@ -103,13 +103,15 @@ h1 {
 
 .container {
 	max-width: 1200px;
-margin: 0 auto;
+	margin: 0 auto;
 }
 
 .title {
 	display: flex;
 	justify-content: center;
+	margin-top: 40px;
 }
+
 .posts {
 	display: flex;
 	flex-direction: column;
@@ -120,20 +122,22 @@ margin: 0 auto;
 	padding: 8px;
 	border-color: bisque;
 	border: 1px;
-
 }
 
 .pagination {
 	display: flex;
-	}
+	justify-content: center;
+	font-size: 15px;
+}
 
-	.pagination__item {
-		padding: 8px;
-		margin: 8px;
-		cursor: pointer;
-	}
+.pagination__item {
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+	display: inline-block;
+}
 
-	.pagination__item-active {
-		font-weight: 800;
-		color: gold;
-	}
+.pagination__item-active {
+	font-weight: 800;
+	color: gold;
+}
